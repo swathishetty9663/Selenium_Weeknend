@@ -29,6 +29,7 @@ public class AddScreenshotIntoReport {
 		extReport.attachReporter(spark);
 		ExtentTest test=extReport.createTest("addScreenshot");
 		test.log(Status.INFO, "Adding scrennshot into report");
+		test.log(Status.INFO, "Adding scrennshot into report");
 		test.addScreenCaptureFromBase64String(photo);
 		extReport.flush();
 		
